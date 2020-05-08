@@ -184,7 +184,9 @@ if (numericChars) {
 return password.slice(0, length);
 }
 function getRandomValue(arr) {
-  return arr[Math.floor(Math.random() * arr.length)];
+  var randIndex = Math.floor(Math.random() * arr.length);
+   var randElement = arr[randIndex];
+   return randElement;
 }
 
 // Add event listener to generate button
